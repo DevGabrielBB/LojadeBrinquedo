@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Adicionar Brinquedo</title>
+	    <link rel="stylesheet" type="text/css" href="/LojaDeBrinquedos/css/styles_criarBrinquedo.css">
+	
+	<script>
+        function mostrarPopup() {
+            var senhaCorreta = "admin123";
+            var senhaInserida = prompt("Por favor, insira a senha:");
+            
+            if (senhaInserida === senhaCorreta) {
+                alert("Acesso concedido!");
+                // Aqui você pode redirecionar o usuário para a página de admin
+                window.location.href = "ServletBrinquedo?action=listaAdmin";
+            } else {
+                alert("Senha incorreta. Tente novamente.");
+            }
+        }
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	</head>
+	<body>
+	    <header>
+	    	<img alt="Logo" src="/LojaDeBrinquedos/images/toys_land-logo.png" height="250" width="400">
+	    </header>
+	    
+	<nav id="navegador">
+	 	<h2>Menu Principal</h2>
+	    <!--<button onclick="mostrarPopup()">Ir para a Página de Administração</button>-->
+	    <p><a href= "/LojaDeBrinquedos/ServletBrinquedo?action=list">Home (destaques)</a></p>
+	    <p><a href= "/LojaDeBrinquedos/jsp/catalago.jsp">Catálogo de Brinquedos</a></p>
+	    <p><a href = "javascript:void(0)" onclick="mostrarPopup()">Administração</a></p>
+	    <p><a href = "/LojaDeBrinquedos/jsp/sobre.jsp">Sobre a equipe</a></p>
+    </nav>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <form id="brinquedoForm" action="../ServletBrinquedo?action=create" method="post" enctype="multipart/form-data">
+	        <label for="codBrinquedo">Código do Brinquedo:</label>
+	        <input type="text" id="codBrinquedo" name="codBrinquedo" required><br><br>
+	        
+	        <label for="descricao">Descrição:</label>
+	        <input type="text" id="descricao" name="descricao" required><br><br>
+	
+	        <label for="categoria">Categoria:</label>
+	        <input type="text" id="categoria" name="categoria" required><br><br>
+	
+	        <label for="marca">Marca:</label>
+	        <input type="text" id="marca" name="marca" required><br><br>
+	
+	        <label for="imagem">Imagem:</label>
+	        <input type="file" id="nomeImagem"  name="nomeImagem" accept="image/*" required><br><br>
+	
+	        <label for="valor">Valor:</label>
+	        <input type="text" id="valor" name="valor" required><br><br>
+	
+	        <label for="detalhes">Detalhes:</label>
+	        <textarea id="detalhes" name="detalhes" required></textarea><br><br>
+	
+	        <input type="submit" value="Adicionar Brinquedo">
+	    </form>
+	</body>
+</html>

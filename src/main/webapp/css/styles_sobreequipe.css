@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@charset "ISO-8859-1";
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Fundo mais claro */
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #4169e1; /* Azul Royal */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+#destaque {
+            margin-top: 10px;
+            float: right;
+            width: 50%;
+            padding-top: 10px;
+        }
+
+
+
+#navegador {
+    
+    background-color: #4169e1; /* Azul Royal */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 850px;
+   	float: left;
+   	display: inline-block;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+	margin-top: 20px;
+	margin-left: 20px;
+	
+}
+#navegador h2 {
+    color: #fff;
+}
+
+#navegador ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navegador p {
+    margin: 5px 0;
+}
+
+#navegador a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 9px;
+}
+
+#navegador a:hover {
+    font-weight: bold;
+}
+
+#destaque {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+    float: left;
+	
+}
+/* Adicione estilos CSS para as imagens */
+.img-container {
+   display: inline-block;
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+}
+
+.img-container img {
+     max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+#destaque{
+ 	margin:20px;
+ 	padding-top: 10px;
+           
+	width: 76%;
+  }
+
